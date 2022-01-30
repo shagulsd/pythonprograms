@@ -1,7 +1,7 @@
 print("hello")
 print("shagul")
 
-reversed numbers
+# reversed numbers
 number=1234
 rev=0
 while(number>0):
@@ -29,6 +29,29 @@ if count== 2:
     print('prime number')
 else:
     print('not a prime number')
+
+largest three numbers
+num1 = 14
+num2 =12
+num3 =10
+if (num1>=num2 and  num1>=num3):
+    largest =num1
+elif (num2>=num3 and num2>=num1):
+    largest=num2
+else:
+    largest =num3
+
+print(largest)
+
+
+
+
+
+
+
+
+
+
 
 
 
