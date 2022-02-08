@@ -1,99 +1,91 @@
 
-class don ():
-    def shagul (self ,c,g,h):
-        return c+g+h
-    def sathish (self,a,b,c):
-        return a+b+c
-yy=  don ()
-print(yy.shagul(1,2,3))
-# print(yy.sathish(3,4,6))
-
-
-class gun ():
-    def dance (self,a,b):
-        c=a+b
-yy = gun()
-print (yy.dance(10,13))
-
-
-class friuts ():
-
-    def mango (self,prize,kilo):
-        return prize *kilo
-    def orange (self,prize,kilo):
-
-        return prize *kilo
-    def papaya (self,prize,kilo):
-
-        return prize * kilo
-balance=1000
-yy= friuts()
-mangoprize = yy.mango(6,10)
-orangeprize=yy.orange(5,8)
-papayaprize=yy.papaya(7,10)
-print(balance-mangoprize-orangeprize-papayaprize)
-
-
-
-class friuts ():
-
-    def mango (self,prize,kilo):
-        return prize *kilo
-    def orange (self,prize,kilo):
-
-        return prize *kilo
-    def papaya (self,prize,kilo):
-
-        return prize * kilo
-balance=int(input("enter the balance available"))
-mprice=int(input("enter the m price"))
-oprice=int(input("enter the o price"))
-pprice=int(input("enter the p price"))
-mkg=int(input("enter the m kg"))
-okg=int(input("enter the o kg"))
-pkg=int(input("enter the p kg"))
-yy= friuts()
-mangoprize = yy.mango(mprice,mkg)
-orangeprize=yy.orange(oprice,okg)
-papayaprize=yy.papaya(pprice,pkg)
-print("Mango price",mangoprize)
-print("orange price",orangeprize)
-print("papaya price",papayaprize)
-print("Remaining",balance-mangoprize-orangeprize-papayaprize)
-
-class bikes ():
-
-    # constructor
-    def __init__(self):
-        self.pmileage=int(input("enter the pmilage "))
-        self.pcapacity=int(input("enter the pcapacity "))
-        self.hmileage=int(input("enter the hmileage "))
-        self.hcapacity=int(input("enter the hcapacity "))
-
-    def comp (self):
-        if(self.pmileage < self.hmileage):
-            print("{} pmileage is more efficent".format(self.pmileage))
-        else:
-            print("{} hmileage is more efficent".format(self.hmileage))
-
-
-yy= bikes()
-yy.comp()
+#
+# class bloodbank():
+#     def __init__ (self, name, age, bloodtype):
+#         self.name = name
+#         self.age = age
+#         self.bloodtype = bloodtype
+#
+#     def apositive(self, bloodcollection):
+#         print("name -->", self.name)
+#         print("age -->", self.age)
+#         print("bloodtype -->", self.bloodtype)
+#         count = bloodcollection[self.bloodtype]
+#         print("remaining blood available ", count - 1)
+#
+#     def bpositive(self, bloodcollection):
+#         print("name -->", self.name)
+#         print("age -->", self.age)
+#         print("bloodtype -->", self.bloodtype)
+#         count = bloodcollection[self.bloodtype]
+#         print("remaining blood available ", count - 1)
+#
+#     def abpositive(self):
+#         print("name -->", self.name)
+#         print("age -->", self.age)
+#         print("bloodtype -->", self.bloodtype)
+#         count = bloodcollection[self.bloodtype]
+#         print("remaining blood available ", count - 1)
+#
+#
+# bloodcollection = {"apositive": 2, "bpositive": 1, "abpositive": 3}
+#
+# bloodtype = input("enter the blood type :")
+# name = input("enter the name :")
+# age = int(input("enter the age: "))
+#
+# bloodtype = bloodtype.strip()
+# if (bloodtype in bloodcollection):
+#     tt = bloodbank(name, age, bloodtype)
+#     if (bloodtype == "apositive"):
+#         tt.apositive(bloodcollection)
+#     elif (bloodtype == "bpositive"):
+#         tt.bpositive(bloodcollection)
 
 
 
-class bikes2 ():
-    def __init__(self,pmileage,hmileage):
-        self.pmileage=pmileage
-        self.hmileage=hmileage
-    def comp (self):
-        if(self.pmileage > self.hmileage):
-            print("{} pmileage is more efficent".format(self.pmileage))
-        else:
-            print("{} hmileage is more efficent".format(self.hmileage))
-yy= bikes2(2,5)
-yy.comp()
 
+
+
+
+
+
+
+class marklist():
+    def __init__(self,name,age,rollno,sub):
+        self.name = name
+        self.age = age
+        self.rollno = rollno
+        self.sub=sub
+
+    def tamil(self,marks):
+        print("name",self.name)
+        print("age",self.age)
+        print("rollno",self.rollno)
+
+        rankcard = marks[self.sub]
+        print("print the remaining mark",rankcard-1)
+    def english(self,marks):
+        print("name",self.name)
+        print("age",self.age)
+        print("rollno",self.rollno)
+        rankcard = marks[self.sub]
+        print("print the remaining mark",rankcard-1)
+
+marks = {"tamil": 2,"english": 1}
+rollno = int(input("enter the rollno"))
+name = input("enter the name")
+age = int(input("enter the age"))
+sub= input("enter the sub")
+
+
+sub = sub.strip()
+if (sub in marks):
+    tt = marklist(name, age, rollno,sub)
+    if (sub == "tamil"):
+        tt.tamil(marks)
+    elif (sub  == "english"):
+        tt.english(marks)
 
 
 
